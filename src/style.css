@@ -1,0 +1,13 @@
+body{
+    background-image:url('Imagenes/Imagen\ principal.jpg');
+    
+}
+
+h1{
+    display: flex; /* visualizar contenido  */
+    justify-content: center; /* se aplica a display: flex  para que el texto quede centrado*/
+    padding: 10px; /* Espacio entre el contenido y los bordes*/
+    background-color: #3ede2f; /*color de fondo*/
+    color: #f5eeee; /*Color de letra*/
+    margin: 40px;
+    }
