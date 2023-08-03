@@ -21,14 +21,23 @@ h1{
     width: 800px; 
 }
 
-button{
+anside {
+    padding: 100px;           /* Espaciado interno en el aside */
     display: flex-direction;
-    justify-content:center;
+    justify-content:space-between;
     width: 250px; 
     height: 40px; 
-    padding: 10px;
-    background-color:  rgb(227, 233, 220);
+    
 }
+
+anside button {               /* Estilos para los botones dentro de <aside> */
+    display: inline-block;    /* Hace que los botones se muestren en línea */
+    margin: 10px;           /* Margen izquierdo y derecho de los botones */
+    padding: 10px 15px;       /* Relleno interno de los botones */
+    cursor: pointer;          /* Cambia el cursor al pasar sobre los botones */   
+}
+
+
 
 footer {
     text-align: center; /* Centra el contenido del pie de página */
@@ -40,7 +49,7 @@ footer {
 
 }
 
-footer p {
+footer{
     font-size: 15px; /* cambia tamaño del letra de pagina */
 }
 
@@ -50,6 +59,25 @@ footer p {
     height: 130PX;
     font-size: 15px;
 } 
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Estilos específicos para dispositivos móviles */
+    h1 {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    anside {
+        padding: 5px;
+    }
+
+    anside button {
+        margin: 5px 10px;
+        padding: 5px 10px;
+    }
+}
+
 
 
 
