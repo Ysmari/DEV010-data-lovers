@@ -5,38 +5,35 @@ body{
 
 h1{
     display: flex; /* visualizar contenido  */
-    justify-content:center; /* se aplica a display: flex  para que el texto quede centrado*/
+    justify-content:center; /* se aplica a display: center para que el texto quede centrado*/
     padding: 10px; 
     background-color: #3ede2f; 
     color: #f5eeee; /*Color de letra*/
     margin: 40px;
     }
 
-#Subdamerica{
+#sudamerica{ /* imagen que esta en el titulo*/
     width: 60px;
 }
 
-#root{
-    margin: 30px;
-    width: 800px; 
+#root{  /* todo lo del estilo cajon de banderas*/
+    width: 1200px; /* me trae el ancho del cajon*/
+    display: flex; /* me muestra las banderas distribuidas en toda la pagina */
+    flex-wrap: wrap; /* Permite que las banderas se denvuelvan en filas */
+    justify-content: space-between; /* Distribuye las filas horizontalmente */
+    padding: 30px; 
+    justify-content: center; /* Centra horizontalmente */
 }
 
-anside {
-    padding: 100px;           /* Espaciado interno en el aside */
-    display: flex-direction;
-    justify-content:space-between;
-    width: 250px; 
-    height: 40px; 
-    
+anside {                      /*botones */
+    padding: 300px;           /* Espaciado interno en la caja donde estan los botones*/  
 }
 
-anside button {               /* Estilos para los botones dentro de <aside> */
-    display: inline-block;    /* Hace que los botones se muestren en línea */
+anside button {               /* Estilos para los botones */
     margin: 10px;           /* Margen izquierdo y derecho de los botones */
     padding: 10px 15px;       /* Relleno interno de los botones */
     cursor: pointer;          /* Cambia el cursor al pasar sobre los botones */   
 }
-
 
 
 footer {
@@ -46,18 +43,15 @@ footer {
     font-family: "arial", "helvetica", sans-serif; /* tipo de letra del pie de pagina */
     color: #f5eeee;
     margin: 40px;
-
-}
-
-footer{
     font-size: 15px; /* cambia tamaño del letra de pagina */
+
 }
 
-.Bandera{
-    margin: 10PX;
-    width: 200PX;
-    height: 130PX;
-    font-size: 15px;
+.Bandera{  /*estilo de banderas */
+    margin: 20PX;
+    width: 250PX;
+    height: 150PX;
+    font-size: 1000px;
 } 
 
 /* Consulta de medios para dispositivos móviles */
@@ -77,6 +71,23 @@ footer{
         padding: 5px 10px;
     }
 }
+
+.BanderaContenedor { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+.nombres {
+    color: aqua;
+}
+
+
+
+
+
+
+
 
 
 
