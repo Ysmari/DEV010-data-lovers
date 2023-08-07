@@ -2,28 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers hola</title>
+    <title>Data Lovers </title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Etiqueta para controlar la escala en dispositivos móviles -->
   </head>
   <body> 
     <h1>
       <img src = "Imagenes/sudamerica.jpg" id="sudamerica">Cultura-travels</h1>
-    <anside>
-      <button id="button1">Ordenar de la A a la Z</button> 
-      <!--<button id="aplicarfiltros">Filtros</button>-->
-      <select>
-        <option value="">Países limitantes</option>
-        <option value="">Area </option>
-        <option value="">Idioma</option>
-      </select>  
-      <button id="button3">Calcula área total de cada país</button>
-    </anside>  
+    <header>
+      <form id="filtroForm"> <!--aplicar filtro a boton (paises limites)-->
+        <label for="nombrePais">Nombre de pais o idioma:</label>
+        <input type="text" id="nombrePais" name="nombrePais">
+        <label for="filtrar">Filtrar:</label>
+        <button id="limitantes" type="button">Países limitantes</button>
+        <button id="idioma" type="button">Idioma</button> 
+      </form>
+      
+      <button id="button3">Calcula área total </button>
+      <button id="button1">Ordenar paises de la A a la Z</button>  
+    </header>  
     
-    <div id="root">
+    <div id="root"> <!--principal de html para ser llamado en js-->
     </div>
-      
-      
+        
     <script src="main.js" type="module"></script>
     <footer>
     <p>Desarrollado Por: Diana Matamoros e Ysmari Mendoza</p>
