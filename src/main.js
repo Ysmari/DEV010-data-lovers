@@ -5,6 +5,7 @@ console.log(example, data);
 
 const root = document.getElementById('root');
 
+
 //movimiento de las banderas 
 
 let contentRootInfo = '';
@@ -77,6 +78,7 @@ btnLimites.addEventListener("click", function () { // Activo la funcion del boto
   });
 
 // Boton de filtro Idioma 
+
   const btnIdioma = document.getElementById('idioma')
   let banderasByIdioma = '';
 
@@ -97,7 +99,7 @@ btnLimites.addEventListener("click", function () { // Activo la funcion del boto
   })
 
 
-  
+
 
 
 

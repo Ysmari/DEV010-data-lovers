@@ -10,20 +10,31 @@
     <h1>
       <img src = "Imagenes/sudamerica.jpg" id="sudamerica">Cultura-travels</h1>
     <header>
+      <button id="button1">Ordenar de A a Z</button>  
+
       <form id="filtroForm"> <!--aplicar filtro a boton (paises limites)-->
-        <label for="nombrePais">Nombre de pais o idioma:</label>
-        <input type="text" id="input" name="input">
-        <label for="filtrar">Filtrar:</label>
-        <button id="limitantes" type="button">Países limitantes</button>
-        <button id="idioma" type="button">Idioma</button> 
+        <label for="nombrePais">Realizar fitros </label>
+        <input type="text" id="input" name="input" placeholder="Ingresa país o Idioma">
+        <a href="#" id="limitantes">Países limitantes</a>
+        <a href="#" id="idioma">Idioma</a>
+      </form>   
+
+      <form id="filtroForm">
+        <label for="área total">Calcular área total:</label>
+        <input type="text" id="input" name="input" placeholder="Nombre del país">
+        <label for="vs">vs</label>
+        <input type="text" id="input" name="input" placeholder="Nombre de país">
+        <button id="Calcular">Calcular</button> 
       </form>
       
-      <button id="button3">Calcula área total </button>
-      <button id="button1">Ordenar paises de la A a la Z</button>  
+       
     </header>  
+
     
-    <div id="root"> <!--principal de html para ser llamado en js-->
+    <div id="root"> class="root-container"> <!--principal de html para ser llamado en js-->
     </div>
+
+    
         
     <script src="main.js" type="module"></script>
     <footer>
