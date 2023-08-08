@@ -3,6 +3,7 @@ import data from './data/countries/countries.js';
 
 console.log(example, data);
 
+// me trae de la data nombre y banderas
 const root = document.getElementById('root');
 
 
@@ -97,6 +98,7 @@ btnLimites.addEventListener("click", function () { // Activo la funcion del boto
     }
     root.innerHTML = banderasByIdioma;
   })
+
 
 
 
