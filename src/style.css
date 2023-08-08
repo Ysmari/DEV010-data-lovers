@@ -55,7 +55,6 @@ header button:active {
     transform: scale(0.7); /* Reduce el tamaño del botón al hacer clic */
   }
 
-
 footer {
     text-align: center; /* Centra el contenido del pie de página */
     background-color: #e6eee6 ; /* Color de fondo del pie de página */
@@ -109,6 +108,20 @@ h4{
         padding: 5px 10px;
     }
 }
+
+.BanderaContenedor { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+.nombres {
+    color: aqua;
+}
+
+
+
+
 
 
 /* Estilos para el contenedor envolvente de la bandera */
