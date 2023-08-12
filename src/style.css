@@ -16,6 +16,7 @@ h1{
     background-color: #eaf0e9; 
     color: #250ac2; /*Color de letra*/
     margin: 40px;
+    border-radius: 15px; 
     }
 
 #sudamerica{ /* imagen que esta en el titulo*/
@@ -32,28 +33,17 @@ h1{
     
 }
 
-header {
-    padding: 10px;
-    display: flex; /* Cambia el valor de display a flex */
-    flex-direction: row; /* Cambia la dirección de los elementos a fila horizontal */
-    justify-content: space-between;
-    align-items: center; /* Centra verticalmente los elementos */
-    height: auto;
-    margin: 50px;
-}
-
 header button {
     display: inline-block;    /* Hace que los botones se muestren en línea */
-    margin: 10px;           /* Margen izquierdo y derecho de los botones */
-    padding: 10px 15px;       /* Relleno interno de los botones */
+    margin: 5px;           /* Margen izquierdo y derecho de los botones */
+    padding: 5px 8px;       /* Relleno interno de los botones */
     cursor: pointer;          /* Cambia el cursor al pasar sobre los botones */   
-    border-radius: 15px;    /* cambia la forma del borde de los botones*/
-    transition: transform 0.1s ease; /* Agrega una transición suave para la propiedad 'transform' */
+    border-radius: 15px; 
+    font-size: 15;   
+    display: flex;
 }
 
-header button:active {
-    transform: scale(0.7); /* Reduce el tamaño del botón al hacer clic */
-  }
+
 
 footer {
     text-align: center; /* Centra el contenido del pie de página */
@@ -63,6 +53,7 @@ footer {
     color: #250ac2;
     margin: 40px;
     font-size: 15px; /* cambia tamaño del letra de pagina */
+    
 
 }
 
@@ -91,21 +82,20 @@ h4{
 
 
 
-/* Consulta de medios para dispositivos móviles */
-@media (max-width: 767px) {
-    /* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px)  { /* Estilos específicos para dispositivos móviles */
     h1 {
-        font-size: 24px;
-        margin: 20px;
+        font-size: 20px;
+        
     }
 
     header {
-        padding: 5px;
+        padding: 15px;
+        
     }
 
     header button {
-        margin: 5px 10px;
-        padding: 5px 10px;
+        margin: 10px 30px;
+        padding: 15px 15px;
     }
 }
 
@@ -114,13 +104,6 @@ h4{
     flex-direction: column; 
     align-items: center; 
   }
-
-.nombres {
-    color: aqua;
-}
-
-
-
 
 
 
@@ -131,11 +114,6 @@ h4{
     align-items: center; 
 }
 
-/* Estilos para el formato de texto en la tarjeta trasera de información */
-.info-back{
-    white-space: normal ;  /* Controla cómo se manejan los espacios en blanco y saltos de línea */
-    word-break: break-all;  /* Controla cómo se rompen las palabras en caso de que excedan el ancho */
-}
 
 .bandera-container.show-info {
     display: flex;
@@ -153,10 +131,10 @@ h4{
     z-index: 9999;  /* Capa de apilamiento alta para mostrar encima de otros elementos */
   }
 
-  .info-back {
+.info-back {
     
-    height: 30%;  /*Alto de la tarjeta trasera en relación al contenedor envolvente */
-    width: 30%;   /* Ancho de la tarjeta trasera en relación al contenedor envolvente */
+    height: 15%;  /*Alto de la tarjeta trasera en relación al contenedor envolvente */
+    width: 15%;   /* Ancho de la tarjeta trasera en relación al contenedor envolvente */
     background-color: rgb(138, 177, 216);  /* Color de fondo de la tarjeta trasera */
     border-radius: 5px; /* Borde redondeado para la tarjeta trasera */
     display: none;  /* Oculta la tarjeta trasera por defecto */
@@ -173,7 +151,12 @@ h4{
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     overflow: visible; /* Oculta el texto que desborda el contenedor */
     text-overflow: ellipsis; /* Muestra "..." al final del texto que desborda */
-}  
+}
+ 
+.info-back{
+    white-space: normal ;  /* Controla cómo se manejan los espacios en blanco y saltos de línea */
+    word-break: break-all;  /* Controla cómo se rompen las palabras en caso de que excedan el ancho */
+}    
 
 /* Estilos para mostrar la información ampliada en la bandera (parte trasera) */
 .bandera-container.show-info .info-back {
@@ -189,37 +172,87 @@ h4{
 }
 
 .info-back p{
-    font-size: x-small;
+    font-size: 40%;
     line-height: 0.2;
 }
 
 label {
     font-weight: bold;
-    color: #f5f4f8;
+    color: #f0edf7;
     font-size: 25px;
-    display: block; /* Hace que el label ocupe toda la línea */
-    margin-bottom: 5px
+    margin: 5px;
+    display: start; /* visualizar contenido  */
+    justify-content: center;
+    /*border: 1px solid #ccc;*/
     
 
 }
 
 input {color: #03000a;
     font-size: 15px;
-    margin-bottom: 5px;
+    padding: 1px;
+    width: 120px; /* Ancho personalizado */
+    height: 1px; /* Altura personalizada */
+    padding: 10px; /* Espacio interno */
+    font-size: 15px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Borde redondeado */
+    
     
     
 } 
 
-a {
-    color: #00004b;
-    font-size: 20px;
+#limitesForm{
+    /*border: 1px solid #ccc;*/
+    padding: 20px;
+    display: flex; /* visualizar contenido  */
+    justify-content: center;
+    width: 300px; 
+    margin-left:  400px;
+    
+    
+    }
+    
+#areaForm {
+    display: flex; /* visualizar contenido  */
+    justify-content: flex-end; /* se aplica a display: center para que el texto quede centrado*/
+    padding: 10px; 
+    /*background-color: #f7faf6; */
+    color: #250ac2; /*Color de letra*/
+    margin: 40px;
+    order: 1px solid #ccc;
+    height: 200px;
+    }
+    
+
+#opciones {
+    display: flex; /* visualizar contenido  */
+    justify-content:start; /* se aplica a display: center para que el texto quede centrado*/
+    padding: 5px; 
+    color: #250ac2; /*Color de letra*/
+    margin: 50px;
+    border-radius: 15px; 
+    cursor: pointer; 
+    }
+
+.button{
     font-weight: bold;
-    display: block; 
-    margin: 5px;
-
-
+    color: #240a61;
+    background-color: rgb(146, 175, 236);
+    font-size: 12px;
+    border: none;
+    text-align: center;
+    direction: column;
+    display: flex;
+    justify-content: space-between;
 }
 
+
+
+
+
+    
+    
 
 
 

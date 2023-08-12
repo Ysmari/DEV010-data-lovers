@@ -4,34 +4,53 @@
     <meta charset="utf-8">
     <title>Data Lovers </title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Etiqueta para controlar la escala en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Etiqueta para controlar la escala en dispositivos móviles -->
   </head>
   <body> 
     <h1>
       <img src = "Imagenes/sudamerica.jpg" id="sudamerica">Cultura-travels</h1>
+      
     <header>
-      <button id="button1">Ordenar de A a Z</button>  
 
-      <form id="filtroForm"> <!--aplicar filtro a boton (paises limites)-->
-        <label for="nombrePais">Realizar fitros </label>
-        <input type="text" id="input" name="input" placeholder="Ingresa país o Idioma">
-        <a href="#" id="limitantes">Países limitantes</a>
-        <a href="#" id="idioma">Idioma</a>
-      </form>   
+      <button id="button1">Ordenar de A a Z</button>
+      
+      <select id="opciones">
+        <label for="opciones">seleccione una opcion</label>
+        <option value="">Seleccione opcion</option>
+        <option value="limitantes">Limites del pais</option>
+        <option value="idioma">Filtra por idioma</option>
+        <option value="calculo">Calcular area total</option>
+        
+      </select>
+      
+      <form id="limitesForm" style="display: none;">
+        <label for="limitantes"> limitantes de paises </label>
+        <input type="text" id="input1" name="input" placeholder="Ingresa país">
+        <button type="button" id="limitantes" class="button">Buscar</button>
+        <button type="volver" id="volver" class="button">Inicio</button>
+      </form>
 
-      <form id="filtroForm">
-        <label for="área total">Calcular área total:</label>
-        <input type="text" id="input" name="input" placeholder="Nombre del país">
-        <label for="vs">vs</label>
-        <input type="text" id="input" name="input" placeholder="Nombre de país">
-        <button id="Calcular">Calcular</button> 
+      <form id="idiomaForm" style="display: none;"> 
+        <label for="idioma"> Idioma </label>
+        <input type="text" id="input2" name="input" placeholder="Ingresa idioma">  
+        <button  type="button" id="idioma" class="button">Buscar</button> 
+        <button type="volver" id="volver" class="button">Inicio</button>
       </form>
       
+      <form id="areaForm" style="display: none;"> <!--uctilizo display none para ocultar-->
+        <label for="área total">Calcular área total:</label>
+        <input type="text" id="area1" name="area1" placeholder="Nombre del país">
+        <label for="vs">   vs   </label>
+        <input type="text" id="area2" name="area2" placeholder="Nombre de país">
+        <button type="button" id="calcular" class="button">Calcular</button> 
+        <button type="volver" id="volver" class="button">Inicio</button>
+        
+      </form>
        
     </header>  
 
     
-    <div id="root"> class="root-container"> <!--principal de html para ser llamado en js-->
+    <div id="root"><!--principal de html para ser llamado en js-->
     </div>
 
     
