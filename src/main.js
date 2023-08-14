@@ -5,33 +5,43 @@ import data from './data/countries/countries.js';
 
 console.log(example, data);
  
-//Capturar infirmacion//
 // Mostrar en Lista desplegable la información
-const opcionSeleccionada = document.getElementById("opciones"); 
+
+const opcionSeleccionada = document.getElementById("opciones");
+const botonInicio = document.getElementById("volver");
+botonInicio.addEventListener("click", volverInicio);
+function volverInicio() {
+  ocultarContenidos();
+
+function ocultarContenidos() { 
+  document.getElementById("idioma").style.display = "none";
+  document.getElementById("limites").style.display="none";
+  document.getElementById("areaForm").style.display="none";
+  document.getElementById("opciones").style.display = "block";
+ }
+} 
 
 opcionSeleccionada.addEventListener("change",function(){
 
   const valorSeleccionado= opcionSeleccionada.value;
   if(valorSeleccionado==="limitantes"){
-    document.getElementById("limitesForm").style.display="block";
+    document.getElementById("limites").style.display="block";
     document.getElementById("areaForm").style.display="none";
-    document.getElementById("idiomaForm").style.display="none";
+    document.getElementById("idioma").style.display="none";
+
   
   }
   else if(valorSeleccionado==="idioma"){
-    document.getElementById("idiomaForm").style.display="block";
+    document.getElementById("idioma").style.display="block";
     document.getElementById("areaForm").style.display="none";
-    document.getElementById("limitesForm").style.display="none";
+    document.getElementById("limites").style.display="none";
 
-    function volverInicio(){
-      document.getElementById('opciones').style.display = "block";
-      document.getElementById('idiomaForm').style.display = "none"; 
-    }
   }
+  
   else if(valorSeleccionado==="calculo"){
     document.getElementById("areaForm").style.display="block";
-    document.getElementById("idiomaForm").style.display="none";
-    document.getElementById("limitesForm").style.display="none";
+    document.getElementById("idioma").style.display="none";
+    document.getElementById("limites").style.display="none";
 
     function volverInicio(){
       document.getElementById('opciones').style.display = "block";
@@ -104,24 +114,22 @@ buttonOrdenar.addEventListener('click', () => { // Agrega un evento de clic al b
 
 //Boton de filtros paises limitantes.
 
-// Debemos llamar las funciones que vamos a uctilizar 
-
-const btnLimites = document.getElementById('limitantes');
-btnLimites.addEventListener('click', function () {
-  const inputPais = document.getElementById('input1');
-  const paisElegido = inputPais.value;
-  
+const selectPais = document.getElementById('limites');
+limites.addEventListener("change",function(){
+  const paisElegido = selectPais.value;
   
   const paisesLimitantes = filtrarPaisesLimitantes(data, paisElegido);
   pintarData(paisesLimitantes);
-});
+  
+}); 
 
 // Boton de filtro Idioma 
 
-  const btnIdioma = document.getElementById('idioma')
-  btnIdioma.addEventListener('click',function () {
-    const inputIdioma = document.getElementById('input2').value;
-    const dataFiltradaPorIdioma = filtrarIdioma(data.countries, inputIdioma);
+  const selectIdioma = document.getElementById('idioma');
+  selectIdioma.addEventListener("change",function () {
+    const idiomaElegido = selectIdioma.value;
+    const dataFiltradaPorIdioma = filtrarIdioma(data.countries, idiomaElegido);
+   
     pintarData(dataFiltradaPorIdioma);
   }) 
 
@@ -131,6 +139,5 @@ btnLimites.addEventListener('click', function () {
   const inpuCalcular1 = document.getElementById('area1').value;
   const inpuCalcular2 = document.getElementById('area2').value;
   const sumaArea= calcularArea(data, inpuCalcular1,inpuCalcular2);
-  console.log(sumaArea)
   alert('Area Total: '+ sumaArea)
   })

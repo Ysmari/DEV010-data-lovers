@@ -11,33 +11,54 @@
       <img src = "Imagenes/sudamerica.jpg" id="sudamerica">Cultura-travels</h1>
       
     <header>
-
+      <button type="button" id="volver" class="button">Inicio</button>
       <button id="button1">Ordenar de A a Z</button>
-      
+     
+
+      <!--opciones de pantalla principal-->
       <select id="opciones">
-        <label for="opciones">seleccione una opcion</label>
-        <option value="">Seleccione opcion</option>
+        <label for="limitantes"> Seleccione una opcion </label>
+        <option value="">Seleccione una opción</option>
         <option value="limitantes">Limites del pais</option>
         <option value="idioma">Filtra por idioma</option>
         <option value="calculo">Calcular area total</option>
-        
+     </select>  
+
+      <!-- opciones de paises limites-->
+     <select id="limites" style="display: none;">
+        <option value="Seleccione país">Seleccione país</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Chile">Chile</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Falkland Islands">Falkland Islands</option>
+        <option value="French Guiana">French Guiana</option>
+        <option value="Guyana">Guyana</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Venezuela">Venezuela</option>
       </select>
       
-      <form id="limitesForm" style="display: none;">
-        <label for="limitantes"> limitantes de paises </label>
-        <input type="text" id="input1" name="input" placeholder="Ingresa país">
-        <button type="button" id="limitantes" class="button">Buscar</button>
-        <button type="volver" id="volver" class="button">Inicio</button>
-      </form>
 
-      <form id="idiomaForm" style="display: none;"> 
-        <label for="idioma"> Idioma </label>
-        <input type="text" id="input2" name="input" placeholder="Ingresa idioma">  
-        <button  type="button" id="idioma" class="button">Buscar</button> 
+      <select id="idioma" style="display: none;">
+        <option value="Seleccione idioma">Seleccione idioma</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Guaraní">Guaraní</option>
+        <option value="Quechua">Quechua</option>
+        <option value="Aymara">Aymara</option>
+        <option value="English">English</option> 
+        <option value="Portuguese">Portuguese</option>
+        <option value="Dutch">Dutch</option>
+        <option value="French">French</option>
         <button type="volver" id="volver" class="button">Inicio</button>
-      </form>
-      
-      <form id="areaForm" style="display: none;"> <!--uctilizo display none para ocultar-->
+      </select>
+
+      <!--Calcular area total-->
+      <form id="areaForm" style="display: none"> 
         <label for="área total">Calcular área total:</label>
         <input type="text" id="area1" name="area1" placeholder="Nombre del país">
         <label for="vs">   vs   </label>

@@ -8,20 +8,7 @@ export const anotherExample = () => {
   return 'OMG';
 };
 
-// Data por Idioma
-export const filtrarIdioma = (data, inputIdioma) =>{
-  const dataFiltradaIdioma = [];
-  for (let i=0; i<data.length; i++){
-    let lenguajes = data[i].languages;
-    for(const key in lenguajes) {
-      if(lenguajes[key].toLowerCase()=== inputIdioma.toLowerCase()) {
-        dataFiltradaIdioma.push(data[i])
-       
-      }
-    }    
-  }
-  return dataFiltradaIdioma;
-}
+
 
 // Calcula Area entre dos paises
 export const calcularArea = (data, inpuCalcular1,inpuCalcular2) =>{
@@ -52,6 +39,7 @@ export const ordenarAZ = (banderas) => {
   return banderasClonadas;
 };
 
+// Data por Limites 
 export const filtrarPaisesLimitantes = (data, paisElegido) => {
   const paisesLimitantes = [];
   const pais = data.countries.find(pais => pais.name.common === paisElegido); // Buscamos el país que el usuario eligió
@@ -63,7 +51,21 @@ export const filtrarPaisesLimitantes = (data, paisElegido) => {
       }
     });
   }
-
   return paisesLimitantes;
 };
+
+// Data por Idioma
+export const filtrarIdioma = (data, idiomaElegido) =>{
+  const dataFiltradaIdioma = [];
+  for (let i=0; i<data.length; i++){
+    let lenguajes = data[i].languages;
+    for(const key in lenguajes) {
+      if(lenguajes[key] === idiomaElegido) {
+        dataFiltradaIdioma.push(data[i])
+      }
+    }    
+  }
+  return dataFiltradaIdioma;
+  
+}
 
