@@ -1,13 +1,118 @@
-body{
-    background-image:url('Imagenes/Imagen\ principal.jpg');
-    
+body {
+    background-image:url('Imagenes/SALAR-DE-UYUNI-REVISTA-TIME.jpg');
+ 
 }
 
-h1{
+  
+
+  
+  h1 {
     display: flex; /* visualizar contenido  */
     justify-content: center; /* se aplica a display: flex  para que el texto quede centrado*/
     padding: 10px; /* Espacio entre el contenido y los bordes*/
     background-color: #3ede2f; /*color de fondo*/
-    color: #f5eeee; /*Color de letra*/
+    color: #FDFEFE; /*Color de letra*/
     margin: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    footer {
+        text-align: center; /* Centra el contenido del pie de página */
+        background-color: #2ECC71 ; /* Color de fondo del pie de página */
+        padding: 10px; /* Espaciado interno para el recuadro */
+        font-family: "arial", "helvetica", sans-serif; /* tipo de letra del pie de pagina */
+
+}
+
+    footer p {
+        font-size: 30px; /* cambia tamaño del pie de pagina */
+
+}
+
+
+.Bandera{
+    margin: 10PX;
+    width: 200PX;
+    height: 130PX;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+aside {
+    text-align: center;      /* Centra el contenido del aside horizontalmente */
+    padding: 10px;           /* Espaciado interno en el aside */
+    
+}
+  
+  /* Estilos para los botones dentro de <aside> */
+  aside button {
+    display: inline-block;    /* Hace que los botones se muestren en línea */
+    margin: 0 20px;           /* Margen izquierdo y derecho de los botones */
+    padding: 10px 15px;       /* Relleno interno de los botones */
+    color: #fff;              /* Color del texto en los botones */
+    cursor: pointer;          /* Cambia el cursor al pasar sobre los botones */
+    border-radius: 15px;      /* aqui le cambio el borde a los cuadros*/
+    
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Estilos específicos para dispositivos móviles */
+    h1 {
+        font-size: 24px;
+        margin: 20px;
     }
+
+    aside {
+        padding: 5px;
+    }
+
+    aside button {
+        margin: 5px 10px;
+        padding: 5px 10px;
+    }
+}
+
+
+
+
+
+
+
+  
+  
+      
+
