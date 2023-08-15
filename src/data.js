@@ -26,19 +26,22 @@ export const calcularArea = (data, inpuCalcular1,inpuCalcular2) =>{
   }
 };
 
-
-
-export const ordenarAZ = (banderas) => {
+export const ordenar = (banderas, tipo) => {
   const banderasClonadas = [...banderas]; // Clona las banderas existentes
-   banderasClonadas.sort((a, b) => { //// Ordena las banderas clonadas por nombre de A a Z
+  banderasClonadas.sort((a, b) => { //// Ordena las banderas clonadas por nombre de A a Z
     const nombreA = a.querySelector('h4').textContent;
-    const nombreB = b.querySelector('h4').textContent;
-    return nombreA.localeCompare(nombreB);
+    const nombreB = b.querySelector('h4').textContent; 
+    if (tipo== "asc") {
+      return nombreA.localeCompare(nombreB);
+    }
+    else if ( tipo== "dsc"){
+      return nombreA.localeCompare(nombreB)*-1;
+    }
+   
   });
 
   return banderasClonadas;
 };
-
 // Data por Limites 
 export const filtrarPaisesLimitantes = (data, paisElegido) => {
   const paisesLimitantes = [];

@@ -1,9 +1,7 @@
-import { example, filtrarIdioma, ordenarAZ, filtrarPaisesLimitantes, calcularArea } from './data.js'; //aqui se agrego ordenar de AZ para darle funcionalidad al boton desde data.js
+import { example, filtrarIdioma, ordenar, filtrarPaisesLimitantes, calcularArea } from './data.js'; //aqui se agrego ordenar de AZ para darle funcionalidad al boton desde data.js
 //import { example, filtrarDataLimites} from './data.js';
 
 import data from './data/countries/countries.js';
-
-console.log(example, data);
  
 // Mostrar en Lista desplegable la información
 
@@ -103,7 +101,16 @@ pintarData(data.countries)
 
 const buttonOrdenar = document.getElementById('button1'); // Obtén una referencia al botón de ordenar
 buttonOrdenar.addEventListener('click', () => { // Agrega un evento de clic al botón
-  const banderasOrdenadas = ordenarAZ(root.querySelectorAll('.bandera-container')); // Llama a la función ordenarAZ para ordenar las banderas de A a Z
+  const banderasOrdenadas = ordenar(root.querySelectorAll('.bandera-container'),"asc"); // Llama a la función ordenarAZ para ordenar las banderas de A a Z
+  root.innerHTML = '';// Elimina las banderas originales
+  banderasOrdenadas.forEach(bandera => { // Agrega las banderas ordenadas al root nuevamente
+    root.appendChild(bandera);
+  });
+});
+
+const buttonOrdenarReverse = document.getElementById('button2'); // Obtén una referencia al botón de ordenar
+buttonOrdenarReverse.addEventListener('click', () => { // Agrega un evento de clic al botón
+  const banderasOrdenadas = ordenar(root.querySelectorAll('.bandera-container'),"dsc"); // Llama a la función ordenarAZ para ordenar las banderas de A a Z
   root.innerHTML = '';// Elimina las banderas originales
   banderasOrdenadas.forEach(bandera => { // Agrega las banderas ordenadas al root nuevamente
     root.appendChild(bandera);
