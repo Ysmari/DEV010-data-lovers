@@ -12,14 +12,15 @@ const botonInicio = document.getElementById("volver");
 botonInicio.addEventListener("click", volverInicio);
 function volverInicio() {
   ocultarContenidos();
-
+}
 function ocultarContenidos() { 
   document.getElementById("idioma").style.display = "none";
   document.getElementById("limites").style.display="none";
   document.getElementById("areaForm").style.display="none";
   document.getElementById("opciones").style.display = "block";
+  pintarData(data.countries)
  }
-} 
+
 
 opcionSeleccionada.addEventListener("change",function(){
 
@@ -28,6 +29,7 @@ opcionSeleccionada.addEventListener("change",function(){
     document.getElementById("limites").style.display="block";
     document.getElementById("areaForm").style.display="none";
     document.getElementById("idioma").style.display="none";
+    
 
   
   }
@@ -43,10 +45,7 @@ opcionSeleccionada.addEventListener("change",function(){
     document.getElementById("idioma").style.display="none";
     document.getElementById("limites").style.display="none";
 
-    function volverInicio(){
-      document.getElementById('opciones').style.display = "block";
-      document.getElementById('areaForm').style.display = "none"; 
-    }
+    
   }
   
 })
@@ -122,6 +121,7 @@ limites.addEventListener("change",function(){
   pintarData(paisesLimitantes);
   
 }); 
+
 
 // Boton de filtro Idioma 
 
