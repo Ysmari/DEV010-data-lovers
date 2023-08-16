@@ -259,6 +259,20 @@ input {color: #03000a;
     border-radius: 15px; 
     cursor: pointer; 
     }
+
+#idioma {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex; /* visualizar contenido  */
+    justify-content: center;
+    width: 150px; 
+    margin-left:  400px;
+    border-radius: 10px;
+    cursor: pointer; 
+    
+    }
+
+  
     
     
 
