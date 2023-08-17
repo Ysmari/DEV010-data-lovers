@@ -29,7 +29,6 @@ opcionSeleccionada.addEventListener("change",function(){
     document.getElementById("idioma").style.display="none";
     
 
-  
   }
   else if(valorSeleccionado==="idioma"){
     document.getElementById("idioma").style.display="block";
@@ -62,8 +61,11 @@ function pintarData (data){
   
         contentRootInfo += `<div class="bandera-container">
             <div class="bandera-wrapper">
-                <img src="${country.flags.png}" class="Bandera" id="bandera-${i}"/>
-                <h4>${country.name.common}</h4> 
+               <figure>
+                <img src="${country.flags.png}" class="Bandera" id="bandera-${i}" alt= 
+                "${country.name.common}" />
+                <figcaption>${country.name.common} </figcaption>
+               </figure> 
             </div>
             <div class="info-back">
                 <h4>${country.name.common}</h4>
@@ -141,10 +143,25 @@ limites.addEventListener("change",function(){
   }) 
 
 //calcular área entre dos paises
-  const btnCalcular = document.getElementById ('calcular')
-  btnCalcular.addEventListener('click',function(){
-  const inpuCalcular1 = document.getElementById('area1').value;
-  const inpuCalcular2 = document.getElementById('area2').value;
-  const sumaArea= calcularArea(data, inpuCalcular1,inpuCalcular2);
-  alert('Area Total: '+ sumaArea)
-  })
+  const btnCalcular = document.getElementById ('calcular');
+  const resultadoCalcular = document.getElementById ('resultadoCalcular');
+  const closeModalButton = document.getElementById('closeModalButton');
+
+ btnCalcular.addEventListener('click',function(){
+    const inpuCalcular1 = document.getElementById('area1').value;
+    const inpuCalcular2 = document.getElementById('area2').value;
+    const sumaArea= calcularArea(data, inpuCalcular1,inpuCalcular2);
+    
+    resultadoCalcular.innerHTML = `<h2>Área Total</h2><p>El área total calculada es: ${sumaArea}</p>`;
+    resultadoCalcular.style.display = 'block';
+});
+closeModalButton.addEventListener('click', function() {
+  const inputCalcular1 = document.getElementById('area1');
+  const inputCalcular2 = document.getElementById('area2');
+  
+  inputCalcular1.value = '';
+  inputCalcular2.value = '';
+  resultadoCalcular.style.display = 'none'; 
+
+});
+    

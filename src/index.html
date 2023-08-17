@@ -17,11 +17,11 @@
 
       <button id="button1" class="button">Ordenar de A a Z</button>
       <button id="button2" class="button">Ordenar de Z a A</button>
-     
+
 
       <!--opciones de pantalla principal-->
       <select id="opciones">
-        <label for="limitantes"> Seleccione una opcion </label>
+        <label for="Seleccione una opcion"> Seleccione una opcion </label>
         <option value="">Seleccione una opción</option>
         <option value="limitantes">Limites del pais</option>
         <option value="idioma">Filtra por idioma</option>
@@ -66,8 +66,15 @@
         <input type="text" id="area1" name="area1" placeholder="Nombre del país">
         <label for="vs">   vs   </label>
         <input type="text" id="area2" name="area2" placeholder="Nombre de país">
-        <button type="button" id="calcular" class="button">Calcular</button> 
-        <button id="volver" class="button">Inicio</button>
+        <button type="button" id="calcular" class="button">Calcular</button>
+        <button type="button" id="closeModalButton" class="button">volver a calcular</button> 
+        <section class ="resultadoCalcular" id="resultadoCalcular">
+          <section class="calcular2" id="calcular">
+            <h2>Área Total</h2>
+            <p>El área total calculada es: <span id="areaResultado"></span></p>
+            
+          </section>
+        </section>
         
       </form>
        

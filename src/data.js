@@ -22,7 +22,7 @@ export const calcularArea = (data, inpuCalcular1,inpuCalcular2) =>{
     return pais1.area
   }
   else {
-    alert('No existe alguno de los paises')
+    return('No existe alguno de los paises intente de nuevo')
   }
 };
 
