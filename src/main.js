@@ -20,10 +20,6 @@ function ocultarContenidos() {
   pintarData(data.countries)
 }
 
-
-=======
-
-
 opcionSeleccionada.addEventListener("change", function () {
 
   const valorSeleccionado = opcionSeleccionada.value;
