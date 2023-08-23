@@ -20,7 +20,6 @@ que se inicia con el proyecto  Cultura-travels para dar facilidad a los
 usuarios a encontrar o determinar con  qué país están limitando, conocer 
 el idioma de un país y otros datos básicos.
 
-<img src="Imagenes/sudamerica.jpg">
 
 ## 2. Resumen del proyecto
 
@@ -97,7 +96,11 @@ también cambiamos el estilo de las banderas utilizando fication,
 por recomendación del coach. Importante también resaltar que nos enfocamos 
 en los Paises de Sudamerica.
 
+<img width="421" alt="Prototipo" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/b58c6052-17a1-4f3a-af47-5e8fefe61fea">
+
 ## 6. Prototipo de Final
+
+<img width="944" alt="Opciones" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/a148629a-9a2c-474b-8b83-11cc660fa08f">
 
 
 
