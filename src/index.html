@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Data Lovers </title>
   <link rel="stylesheet" href="style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Etiqueta para controlar la escala en dispositivos móviles -->
 </head>
 
@@ -19,14 +19,14 @@
     <button id="volver" class="button">Inicio</button>
 
     <label class="ordenar1">ordenar:</label>
-    <select id="ordenar" > 
+    <select id="ordenar">
       <option value="">---</option>
       <option value="asc">Ordenar de A a Z</option>
       <option value="dsc">Ordenar de Z a A</option>
     </select>
 
     <!--opciones de pantalla principal-->
-    
+
     <label class="ordenar1">Filtrar y calcular:</label>
     <select id="opciones">
       <option value="">---</option>
@@ -67,22 +67,22 @@
       <option value="Dutch">Dutch</option>
       <option value="French">French</option>
     </select>
-    </header>
+  </header>
 
-    <!--Calcular area total-->
-    <form id="areaForm" style="display: none">
-      <label for="área total" id="area">Calcular área total:</label>
-      <input type="text" id="area1" name="area1" placeholder="Nombre del país">
-      <label for="vs"> vs </label>
-      <input type="text" id="area2" name="area2" placeholder="Nombre de país">
-      <button type="button" id="calcular" class="buttonCalcular">Calcular</button>
-      <button type="button" id="closeModalButton" class="buttonCalcular">volver a calcular</button>
-      <section class="resultadoCalcular" id="resultadoCalcular">
-          <p>El área total calculada es: <span id="areaResultado"></span></p>
+  <!--Calcular area total-->
+  <form id="areaForm" style="display: none">
+    <label for="área total" id="area">Calcular área total:</label>
+    <input type="text" id="area1" name="area1" placeholder="Nombre del país">
+    <label for="vs"> vs </label>
+    <input type="text" id="area2" name="area2" placeholder="Nombre de país">
+    <button type="button" id="calcular" class="buttonCalcular">Calcular</button>
+    <button type="button" id="closeModalButton" class="buttonCalcular">volver a calcular</button>
+    <section class="resultadoCalcular" id="resultadoCalcular">
+      <p>El área total calculada es: <span id="areaResultado"></span></p>
 
-      </section>
+    </section>
 
-    </form>
+  </form>
 
 
 

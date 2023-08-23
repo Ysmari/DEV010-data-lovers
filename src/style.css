@@ -31,7 +31,6 @@ h1 {
 #root {
     /* todo lo del estilo cajon de banderas*/
     display: grid;
-    /* crea una cuadricula flrxible*/
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     /*Distribuir las columnas segun ancho de pagina */
     gap: 40px;

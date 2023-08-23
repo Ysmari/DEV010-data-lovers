@@ -16,7 +16,7 @@ describe('example', () => {
   });
 });
 
-//----------------------------------
+
 //Test Calcular Area
 
 describe('calcularArea', () => {
@@ -28,10 +28,18 @@ describe('calcularArea', () => {
 
 
   it('returns `calcularArea`', () => {
-    const nombrePais = "Brazil";
-    const nombrePais2 = "Brazil";
-    expect(calcularArea(data, nombrePais, nombrePais2)).toEqual(17031534);
+    const nombrePais = "Peru";
+    const nombrePais2 = "Peru";
+    expect(calcularArea(data, nombrePais, nombrePais2)).toBe(2570432);
+
   });
+
+  it('returns `calcularArea`', () => {
+    const nombrePais = "Brazil";
+    const nombrePais2 = "Pais diferente";
+    expect(calcularArea(data, nombrePais, nombrePais2)).toEqual('No existe alguno de los paises intente de nuevo');
+  });
+
 
 });
 
@@ -42,39 +50,46 @@ describe('filtrarIdioma', () => {
 
     expect(filtrarIdioma(data, idiomaFiltrado)).toBe['Suriname'];
   });
-});
 
-describe('key', () => {
-  it('returns `key`', () => {
-    const key = "Dutch";
-    expect(filtrarIdioma(data, key)).toBe['Suriname'];
-  });
-});
-
-describe('lenguajes', () => {
   it('returns `lenguajes`', () => {
-    const lenguajes = "Dutch";
-    expect(filtrarIdioma(data, lenguajes)).toBe['Suriname'];
+    const data = [{ "languages": {"nld": " Dutch"}}, { "languages": {"spa": "Spanish" }}];
+    const idiomaFiltrado = "Dutch";
+
+    expect(filtrarIdioma(data, idiomaFiltrado)).toBe['Suriname'];
   });
+
+  it('returns `lenguajes`', () => {
+    const data = [{ "languages": {"nld": " Dutch"}}, { "languages": {"spa": "Spanish" }}];
+    const idiomaFiltrado = "Spanish";
+
+    expect(filtrarIdioma(data, idiomaFiltrado)).toBe['Spanish'];
+  });
+
+  
 });
 
 
-
-//ordenar
+//test ordenar
 
 describe('ordenar', () => {
   it('returns `ordenar`', () => {
-    const listaPaises = [{ 'name': { 'common' : 'Argentina' }}, { 'name': { 'common' : 'Brazil' }}, { 'name': { 'common' : 'Bolivia'}}];
-    const resultadoEsperado = listaPaises.sort((a,b) => a.name.common.localeCompare(b.name.common))
-    
+    const listaPaises = [{ 'name': { 'common': 'Argentina' } }, { 'name': { 'common': 'Brazil' } }, { 'name': { 'common': 'Bolivia' } }];
+    const resultadoEsperado = listaPaises.sort((a, b) => a.name.common.localeCompare(b.name.common))
+
     const resultadoObtenido = ordenar(listaPaises, 'asc')
 
     expect(resultadoObtenido).toEqual(resultadoEsperado);
   });
-});
 
-
-
+    it('returns `ordenar`', () => {
+      const listaPaises = [{ 'name': { 'common': 'Argentina' } }, { 'name': { 'common': 'Brazil' } }, { 'name': { 'common': 'Bolivia' } }];
+      const resultadoEsperado = listaPaises.sort((a, b) => a.name.common.localeCompare(b.name.common))
+  
+      const resultadoObtenido = ordenar(listaPaises, 'dsc')
+  
+      expect(resultadoObtenido).toEqual(resultadoEsperado);
+    });
+  });
 
 
 // test Limites

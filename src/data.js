@@ -14,7 +14,8 @@ export const calcularArea = (data, inpuCalcular1, inpuCalcular2) => {
     return pais1.area + pais2.area;
   }
   else if (pais1 === pais2) {
-    return pais1.area}
+    return pais1.area;
+  }
 
   else {
     return ('No existe alguno de los paises intente de nuevo')

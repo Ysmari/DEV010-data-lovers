@@ -123,7 +123,7 @@ const selectOrden = document.getElementById('ordenar'); // Obtén una referencia
 selectOrden.addEventListener('change', function () { // Agrega un evento de clic al botón
   const ordenElegido = selectOrden.value;
   const bandOrdenadas = ordenar(data.countries, ordenElegido)
-  
+
   pintarData(bandOrdenadas);
 });
 
