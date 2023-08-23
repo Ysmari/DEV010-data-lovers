@@ -16,8 +16,9 @@ describe('example', () => {
   });
 });
 
-//----------------------------------
+
 //Test Calcular Area
+
 describe('calcularArea', () => {
   it('returns `calcularArea`', () => {
     const nombrePais = "Colombia";
@@ -27,10 +28,18 @@ describe('calcularArea', () => {
 
 
   it('returns `calcularArea`', () => {
-    const nombrePais = "Brazil";
-    const nombrePais2 = "Brazil";
-    expect(calcularArea(data, nombrePais, nombrePais2)).toEqual(17031534);
+    const nombrePais = "Peru";
+    const nombrePais2 = "Peru";
+    expect(calcularArea(data, nombrePais, nombrePais2)).toBe(2570432);
+
   });
+
+  it('returns `calcularArea`', () => {
+    const nombrePais = "Brazil";
+    const nombrePais2 = "Pais diferente";
+    expect(calcularArea(data, nombrePais, nombrePais2)).toEqual('No existe alguno de los paises intente de nuevo');
+  });
+
 
 });
 
@@ -38,32 +47,27 @@ describe('calcularArea', () => {
 describe('filtrarIdioma', () => {
   it('returns `filtrarIdioma`', () => {
     const idiomaFiltrado = "Dutch";
+
     expect(filtrarIdioma(data, idiomaFiltrado)).toBe['Suriname'];
   });
-});
 
-describe('filtrarIdioma', () => {
-  it('returns  `filtered countries`', () => {
-    const idiomaElegido = 'Dutch';
-    const dataFiltradaIdioma = [];
+  it('returns `lenguajes`', () => {
+    const data = [{ "languages": {"nld": " Dutch"}}, { "languages": {"spa": "Spanish" }}];
+    const idiomaFiltrado = "Dutch";
 
-    
-
-    for (let i = 0; i < data.length; i++) {
-      const lenguajes = data[i].languages;
-      for (const key in lenguajes) {
-        if (lenguajes[key] === idiomaElegido) {
-          dataFiltradaIdioma.
-            push(data[i]);
-        }
-      }
-    }
-
-    expect(filtrarIdioma(data, idiomaElegido)).toEqual(dataFiltradaIdioma);
+    expect(filtrarIdioma(data, idiomaFiltrado)).toBe['Suriname'];
   });
+
+  it('returns `lenguajes`', () => {
+    const data = [{ "languages": {"nld": " Dutch"}}, { "languages": {"spa": "Spanish" }}];
+    const idiomaFiltrado = "Spanish";
+
+    expect(filtrarIdioma(data, idiomaFiltrado)).toBe['Spanish'];
+  });
+
 });
 
-  
+//test ordenar
 
 describe('ordenar', () => {
   it('returns `ordenar`', () => {
@@ -84,11 +88,15 @@ describe('ordenar', () => {
     expect(resultadoObtenido).toEqual(resultadoEsperado);
   });
 });
+
+
 // test Limites
 
 describe('filtrarPaisesLimitantes', () => {
   it('devuelve una lista de países limitantes válida', () => {
+
     const paisElegido = 'Colombia';
+
     const paisesLimitantes = filtrarPaisesLimitantes(data, paisElegido);
     expect(Array.isArray(paisesLimitantes)).toBe(true);
   });

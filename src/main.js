@@ -16,9 +16,9 @@ function ocultarContenidos() {
   document.getElementById("limites").style.display = "none";
   document.getElementById("areaForm").style.display = "none";
   document.getElementById("opciones").style.display = "block";
+  document.getElementById("ordenar").style.display = "block";
   pintarData(data.countries)
 }
-
 
 opcionSeleccionada.addEventListener("change", function () {
 
@@ -69,10 +69,12 @@ function pintarData(data) {
   let contentRootInfo = '';
   for (let i = 0; i < data.length; i++) {
     if (data[i].subregion === 'South America') {
+
       const country = data[i];
       const languages = Object.values(country.languages).join(', ');
 
       contentRootInfo += `<div class="bandera-container">
+
             <div class="bandera-wrapper">
                <figure>
                 <img src="${country.flags.png}" class="Bandera" id="bandera-${i}" alt= 
@@ -98,16 +100,20 @@ function pintarData(data) {
     const container = image.closest('.bandera-container');
     const infoBack = container.querySelector('.info-back');
 
+
     image.addEventListener('click', function () {
       container.classList.toggle('show-info');
+
       image.classList.toggle('rotate');
     });
 
     infoBack.addEventListener('click', function () {
       container.classList.remove('show-info');
       image.classList.remove('rotate');
+
     });
   });
+
 }
 pintarData(data.countries)
 
@@ -117,7 +123,7 @@ const selectOrden = document.getElementById('ordenar'); // Obtén una referencia
 selectOrden.addEventListener('change', function () { // Agrega un evento de clic al botón
   const ordenElegido = selectOrden.value;
   const bandOrdenadas = ordenar(data.countries, ordenElegido)
-  
+
   pintarData(bandOrdenadas);
 });
 
@@ -137,6 +143,7 @@ selectPais.addEventListener("change", function () {
 // Boton de filtro Idioma 
 
 const selectIdioma = document.getElementById('idioma');
+
 selectIdioma.addEventListener("change", function () {
   const idiomaElegido = selectIdioma.value;
   const dataFiltradaPorIdioma = filtrarIdioma(data.countries, idiomaElegido);
@@ -156,6 +163,7 @@ btnCalcular.addEventListener('click', function () {
 
   resultadoCalcular.innerHTML = `<h2>Área Total</h2><p>El área total calculada es: ${sumaArea}</p>`;
   resultadoCalcular.style.display = 'block';
+
 });
 closeModalButton.addEventListener('click', function () {
   const inputCalcular1 = document.getElementById('area1');
@@ -166,29 +174,3 @@ closeModalButton.addEventListener('click', function () {
   resultadoCalcular.style.display = 'none';
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

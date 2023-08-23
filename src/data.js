@@ -10,12 +10,13 @@ export const example = () => {
 export const calcularArea = (data, inpuCalcular1, inpuCalcular2) => {
   const pais1 = data.countries.find(pais => pais.name.common === inpuCalcular1); //se busca el pais en la data ingresado
   const pais2 = data.countries.find(pais => pais.name.common === inpuCalcular2);
-  if (pais1 !== null && pais2 !== null) {
+  if (pais1 !== undefined && pais2 !== undefined) {
     return pais1.area + pais2.area;
   }
   else if (pais1 === pais2) {
-    return pais1.area
+    return pais1.area;
   }
+
   else {
     return ('No existe alguno de los paises intente de nuevo')
   }
@@ -31,6 +32,7 @@ export const ordenar = (banderas, tipo) => {
       return -a.name.common.localeCompare(b.name.common);
     }
   });
+
   return banderas
 };
 
@@ -39,6 +41,7 @@ export const ordenar = (banderas, tipo) => {
 export const filtrarPaisesLimitantes = (data, paisElegido) => {
   const paisesLimitantes = [];
   const pais = data.countries.find(pais => pais.name.common === paisElegido); // Buscamos el país que el usuario eligió
+
   if (pais) { // Si encontramos el país, buscamos sus países vecinos
     pais.borders.forEach(border => {
       const paisVecino = data.countries.find(pais => pais.fifa === border);
@@ -62,5 +65,4 @@ export const filtrarIdioma = (data, idiomaElegido) => {
     }
   }
   return dataFiltradaIdioma;
-
 }
