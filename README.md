@@ -1,4 +1,4 @@
-# Data Lovers
+# Cultura-travels
 
 ## Índice
 
@@ -75,6 +75,8 @@ Historia 4
 Para poder saber cuánto tiempo me demoro en conocer los dos países en carro”
 
 ## 4. Prototipo de baja calidad
+
+<img width="449" alt="Baja fideliad" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/d7816ce3-5cdf-444f-a0de-4d253e512015">
 
 En este prototipo está descrito como se verá la página, es como un borrador que se   
 hizo de baja calidad, donde está descrito lo que contiene: inicialmente
