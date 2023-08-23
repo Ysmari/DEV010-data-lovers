@@ -1,4 +1,4 @@
-# Data Lovers
+# Cultura-travels
 
 ## Índice
 
@@ -21,7 +21,6 @@ usuarios a encontrar o determinar con  qué país están limitando, conocer
 el idioma de un país y otros datos básicos.
 
 
-
 ## 2. Resumen del proyecto
 
 Iniciamos con las historias de usuarios para luego seguir con el prototipo de 
@@ -38,17 +37,18 @@ los test de las funciones creadas finalizando este con gran éxito.
 
 En la siguiente imagen está descrita la información que sale al darle click a la bandera 
 
+<img width="948" alt="Informacion banderA" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/c789c94a-bb67-4d5a-a8dc-bbd7b3590f22">
 
 
+En esta imagen está básicamente descrita la funcionalidad de la página con los botones
+funcionando al 100%.
 
+<img width="918" alt="calcular area " src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/2734b70a-1e5e-4276-b727-f660d18e92db">
 
- En esta imagen está básicamente descrita la funcionalidad de la página con los botones
-  funcionando al 100%.
+<img width="944" alt="limites" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/aed960e3-f9f8-4c48-bc94-e90c4dc47a18">
 
  Por último resaltar que el principal objetivo de la página es que el usuario pueda
   usar esta herramienta para encontrar información sobre países de América del sur.
-
-
 
 ## 3. Historias de usuario
  Se habló con 4 usuarios sobre la página y que le gustaría encontrar en ella, de esta 
@@ -76,6 +76,8 @@ Para poder saber cuánto tiempo me demoro en conocer los dos países en carro”
 
 ## 4. Prototipo de baja calidad
 
+<img width="449" alt="Baja fideliad" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/d7816ce3-5cdf-444f-a0de-4d253e512015">
+
 En este prototipo está descrito como se verá la página, es como un borrador que se   
 hizo de baja calidad, donde está descrito lo que contiene: inicialmente
 -El título con su logotipo
@@ -94,7 +96,11 @@ también cambiamos el estilo de las banderas utilizando fication,
 por recomendación del coach. Importante también resaltar que nos enfocamos 
 en los Paises de Sudamerica.
 
+<img width="421" alt="Prototipo" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/b58c6052-17a1-4f3a-af47-5e8fefe61fea">
+
 ## 6. Prototipo de Final
+
+<img width="944" alt="Opciones" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/a148629a-9a2c-474b-8b83-11cc660fa08f">
 
 
 
