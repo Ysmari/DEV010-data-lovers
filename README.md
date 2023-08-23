@@ -20,7 +20,7 @@ que se inicia con el proyecto  Cultura-travels para dar facilidad a los
 usuarios a encontrar o determinar con  qué país están limitando, conocer 
 el idioma de un país y otros datos básicos.
 
-<img src="Imagenes/sudamerica.jpg">
+
 
 ## 2. Resumen del proyecto
 
