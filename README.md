@@ -38,17 +38,18 @@ los test de las funciones creadas finalizando este con gran éxito.
 
 En la siguiente imagen está descrita la información que sale al darle click a la bandera 
 
+<img width="948" alt="Informacion banderA" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/c789c94a-bb67-4d5a-a8dc-bbd7b3590f22">
 
 
+En esta imagen está básicamente descrita la funcionalidad de la página con los botones
+funcionando al 100%.
 
+<img width="918" alt="calcular area " src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/2734b70a-1e5e-4276-b727-f660d18e92db">
 
- En esta imagen está básicamente descrita la funcionalidad de la página con los botones
-  funcionando al 100%.
+<img width="944" alt="limites" src="https://github.com/DianaJ-Dev/DEV010-data-lovers/assets/134237911/aed960e3-f9f8-4c48-bc94-e90c4dc47a18">
 
  Por último resaltar que el principal objetivo de la página es que el usuario pueda
   usar esta herramienta para encontrar información sobre países de América del sur.
-
-
 
 ## 3. Historias de usuario
  Se habló con 4 usuarios sobre la página y que le gustaría encontrar en ella, de esta 
