@@ -92,30 +92,149 @@ h4 {
 @media (max-width: 768px) {
 
     /* Estilos específicos para dispositivos móviles */
+    
     h1 {
         font-size: 20px;
+        justify-content: space-around;
+        align-items: center; 
 
     }
 
     header {
         padding: 15px;
+        justify-content: space-around;
+        align-items: center; 
         
 
     }
 
-    header button {
-        margin: 10px 30px;
-        padding: 15px 15px;
+    #botones {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center; 
+        margin: 0;
+        width:100%;
+
     }
 
-   
+    #root {
+        flex-direction: column;
+        align-items: flex-start;
+        
+
+    }
+
+    .Bandera.rotate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .BanderaContenedor {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+    }        
+
+    .bandera-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .info-back {
+
+        box-sizing: content-box;
+        
+    }    
+
+    .info-back h4 {
+        font-size: 10px;
+        justify-content: space-around;
+        align-items: center; 
+        
+        
+    }
+    
+    .info-back p {
+        font-size: 5px;
+        justify-content: space-around;
+        align-items: center; 
+        padding:valor;
+        box-sizing: border-box;
+    }
+    label {
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    
+    input {
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    
+    #limites {
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    
+    #ordenar {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    
+    #botones {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .button {
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    
+    #areaForm {
+        flex-direction: start;
+        align-items: start;
+        
+    }
+
+    #idioma {
+        padding: 1px;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    
+    
+    #resultadoCalcular {
+       display: flex;
+       justify-content: start;
+
+    }
+    
+
+    .opciones{
+        margin: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    
 
 }
-
 .BanderaContenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    
 }
 
 
@@ -148,14 +267,13 @@ h4 {
     /* Centra elementos horizontalmente */
     align-items: center;
     /* Centra elementos verticalmente */
-    background-color: rgba(25, 24, 24, 0.8);
+    background-color: rgba(47, 42, 42, 0.8);
     /* Fondo semitransparente para el efecto de superposición */
     z-index: 9999;
     /* Capa de apilamiento alta para mostrar encima de otros elementos */
 }
 
 .info-back {
-
     height: 15%;
     /*Alto de la tarjeta trasera en relación al contenedor envolvente */
     width: 15%;
@@ -192,10 +310,6 @@ h4 {
     /* Oculta el texto que desborda el contenedor */
     text-overflow: ellipsis;
     /* Muestra "..." al final del texto que desborda */
-
-}
-
-.info-back {
     white-space: normal;
     /* Controla cómo se manejan los espacios en blanco y saltos de línea */
     word-break: break-all;
@@ -435,6 +549,7 @@ figure {
 
 .ordenar1{
     margin-left: 70px;
+    
 }
 
 #area {
