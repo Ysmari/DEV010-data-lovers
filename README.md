@@ -13,6 +13,8 @@
 
 ## 1. Preámbulo
 
+Comentar primeramente fue un gran reto que nos dio Laboratoria.
+
 Cada vez viajar se hace más atractivo para las personas, nos damos cuenta que
 en las últimas décadas las personas viajan a diferentes destinos sin tener 
 en cuenta el dinero e incluso si algunas personas los acompañan, es por esto 
